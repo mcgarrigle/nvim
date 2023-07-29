@@ -1,0 +1,5 @@
+require('plugins')
+require('basics')
+require('theme')
+require('keymaps')
+-- require('telescope')
