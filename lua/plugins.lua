@@ -12,10 +12,16 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  "ethanholz/nvim-lastplace",
   "vim-airline/vim-airline",
   "vim-airline/vim-airline-themes",
-  "phaazon/hop.nvim",
-  "ethanholz/nvim-lastplace",
+  {
+    'phaazon/hop.nvim',
+    branch = 'v2',
+    config = function()
+      require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+    end
+  },
   {
     "folke/tokyonight.nvim",
     lazy = false,
