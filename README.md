@@ -14,5 +14,5 @@ Linux install nvim
 ```
 then ...
 ```
-  git clone git@github.com:mcgarrigle/nvim.git $HOME/.config/nvim
+  git clone https://github.com/mcgarrigle/nvim.git $HOME/.config/nvim
 ```
