@@ -4,6 +4,8 @@ Linux install nvim
 
 
 ```
+  dnf install -y ripgrep fd-find
+
   mkdir -p $HOME/.local/share
   cd  $HOME/.local/share
   curl -L https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz | tar xz
