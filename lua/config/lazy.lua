@@ -16,10 +16,10 @@ require("lazy").setup({
   "vim-airline/vim-airline",
   "vim-airline/vim-airline-themes",
   {
-    'phaazon/hop.nvim',
-    branch = 'v2',
+    "phaazon/hop.nvim",
+    branch = "v2",
     config = function()
-      require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+      require"hop".setup { keys = "etovxqpdygfblzhckisuran" }
     end
   },
   {
@@ -35,22 +35,16 @@ require("lazy").setup({
       vim.o.timeout = true
       vim.o.timeoutlen = 300
     end,
-    opts = {
-    -- your configuration comes here
-    -- or leave it empty to use the default settings
-    -- refer to the configuration section below
-    }
+    opts = {}
   },
-  "folke/neodev.nvim",
-  { "folke/neoconf.nvim", cmd = "Neoconf" },
   {
     "nvim-telescope/telescope.nvim",
      tag = "0.1.2",
      dependencies = { "nvim-lua/plenary.nvim", "nvim-treesitter/nvim-treesitter" }
   },
-  {'akinsho/toggleterm.nvim', version = "*", config = true},
+  {"akinsho/toggleterm.nvim", version = "*", config = true},
   {
-    'stevearc/oil.nvim',
+    "stevearc/oil.nvim",
     opts = {},
     dependencies = { "nvim-tree/nvim-web-devicons" },
   }
