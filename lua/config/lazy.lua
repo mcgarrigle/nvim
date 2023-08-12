@@ -48,6 +48,7 @@ require("lazy").setup({
      tag = "0.1.2",
      dependencies = { "nvim-lua/plenary.nvim", "nvim-treesitter/nvim-treesitter" }
   },
+  {'akinsho/toggleterm.nvim', version = "*", config = true},
   {
     'stevearc/oil.nvim',
     opts = {},
