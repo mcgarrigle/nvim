@@ -18,3 +18,8 @@ then ...
 ```
   git clone https://github.com/mcgarrigle/nvim.git $HOME/.config/nvim
 ```
+
+Export:
+```
+  tar cvzf nvim-complete-linux64.tar.gz .local/share/nvim .local/share/nvim-linux64 .config/nvim/
+```
