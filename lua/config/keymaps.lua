@@ -21,3 +21,6 @@ vim.keymap.set('v', '<leader>sa', 'xi[]<ESC>P', {})       -- array
 vim.keymap.set('v', '<leader>sv', 'xi${}<ESC>P', {})      -- variable
 vim.keymap.set('v', '<leader>sV', 'xi"${}"<ESC>hP', {})   -- variable quoted
 vim.keymap.set('v', '<leader>sc', 'xi$()<ESC>P', {})      -- capture
+
+-- function
+vim.keymap.set('n', '<leader>ss', 'A {<cr>}<ESC>ko', {})
