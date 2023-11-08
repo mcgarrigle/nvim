@@ -13,6 +13,9 @@ vim.keymap.set('n', '<leader>jq', '<cmd>%!jq -S .<cr>', {})
 vim.keymap.set('n', '<leader>jc', '<cmd>%!jq -c .<cr>', {})
 
 -- simple surround mappings
+vim.keymap.set('n', '<leader>sv', 'viwxi${}<ESC>P', {})      -- variable
+vim.keymap.set('n', '<leader>sV', 'viwxi"${}"<ESC>hP', {})   -- variable quoted
+
 vim.keymap.set('v', '<leader>sq', "xi''<ESC>P", {})       -- quotes
 vim.keymap.set('v', '<leader>sd', 'xi""<ESC>P', {})       -- double quotes
 vim.keymap.set('v', '<leader>sb', 'xi()<ESC>P', {})       -- brackets
