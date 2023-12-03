@@ -12,6 +12,9 @@ vim.keymap.set('n', '<leader>n', '<cmd>noh<cr>', {})
 vim.keymap.set('n', '<leader>jq', '<cmd>%!jq -S .<cr>', {})
 vim.keymap.set('n', '<leader>jc', '<cmd>%!jq -c .<cr>', {})
 
+-- yank word
+vim.keymap.set('n', '<leader>y', 'viwy', {})
+
 -- simple surround mappings
 vim.keymap.set('n', '<leader>sv', 'viwxi${}<ESC>P', {})      -- variable
 vim.keymap.set('n', '<leader>sV', 'viwxi"${}"<ESC>hP', {})   -- variable quoted
