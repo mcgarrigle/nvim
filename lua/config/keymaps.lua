@@ -1,6 +1,11 @@
 vim.g.mapleader = " "
 vim.g.localmapleader = " "
 
+-- escape is missing from many IPad keyboards 
+-- so '§' is used as a stand-in
+
+vim.keymap.set('i', '§', '<ESC>', {})
+
 -- buffer navigation
 vim.keymap.set('n', '<leader><Right>', '<cmd>bn<cr>', {})
 vim.keymap.set('n', '<leader><Left>',  '<cmd>bp<cr>', {})
