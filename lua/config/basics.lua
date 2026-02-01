@@ -1,6 +1,7 @@
 vim.wo.number = true
-vim.opt.guicursor = ""
 vim.g.mapleader = " "
+vim.opt.guicursor = 'n-v-c-i:block'
+-- vim.opt.guicursor = ""
 
 vim.opt.autoindent = true
 vim.opt.smartindent = true
