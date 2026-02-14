@@ -2,24 +2,19 @@
 
 Linux install nvim
 
-
 ```
-  dnf install -y ripgrep fd-find
-
-  mkdir -p $HOME/.local/share
-  cd  $HOME/.local/share
-  curl -L https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz | tar xz
-
-  # add to .bash_profile
-  export PATH="$HOME/.local/share/nvim-linux64/bin":$PATH
-
+git clone https://github.com/mcgarrigle/nvim.git $HOME/.config/nvim
 ```
 then ...
 ```
-  git clone https://github.com/mcgarrigle/nvim.git $HOME/.config/nvim
+./setup.sh
+
+# add to .bash_profile
+export PATH="${HOME}/.local/share/nvim/bin":$PATH
+
 ```
 
 Export:
 ```
-  tar cvzf nvim-complete-linux64.tar.gz .local/share/nvim .local/share/nvim-linux64 .config/nvim/
+tar cvzf nvim-complete-linux.tar.gz .local/share/nvim .local/share/nvim-linux64 .config/nvim/
 ```

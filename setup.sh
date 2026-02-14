@@ -1,6 +1,8 @@
 #!/usr/bin/bash
 
 ARCH=$(uname -m)
+[ $ARCH == aarch64 ] && ARCH=arm64
+
 DIR="${HOME}/.local/share"
 
 mkdir -p "${DIR}" && cd "${DIR}"
