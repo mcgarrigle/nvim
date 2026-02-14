@@ -8,11 +8,7 @@ PACKAGE="nvim-linux-${ARCH}"
 
 mkdir -p "${DIR}" && cd "${DIR}"
 
-<<<<<<< HEAD
-rm -rf "${DIR}/${PACKAGE}"
-=======
 rm -rf "${DIR}/${PACKAGE}" "${DIR}/nvim"
->>>>>>> 92aae7c (setup.sh removes old version)
 curl -L https://github.com/neovim/neovim/releases/latest/download/${PACKAGE}.tar.gz|tar xz
 ln -sf "${DIR}/${PACKAGE}" "${DIR}/nvim"
 
